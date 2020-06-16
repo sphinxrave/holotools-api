@@ -5,19 +5,13 @@
     "node": true
   },
   "extends": [
-    "google"
+    "airbnb-base"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018
-  },
   "rules": {
-    "max-len": 0,
-    "no-unused-vars": 0,
-    "linebreak-style": "off",
-    "guard-for-in": "warn"
+    "eqeqeq": "error",
+    "no-underscore-dangle": "off",
+    "max-len": ["error", 120, 2],
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 4 }],
+    "object-curly-newline": "off"
   }
 }
